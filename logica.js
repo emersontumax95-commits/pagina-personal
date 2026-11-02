@@ -319,26 +319,4 @@ demoBoton.addEventListener("click", function () {
   console.log("Clic número", clics);
 });
 
-seccion("Clase 12 · 1.2 Modificar estilos");
- 
 
-badge.style.backgroundColor = "#1c6b5f";
-badge.style.color = "white";
- 
-
-seccion("Clase 12 · 1.3 Evento click: modo oscuro");
- 
-const botonTema = document.querySelector("#btn-tema");
- 
-botonTema.addEventListener("click", function () {
-
-  document.body.classList.toggle("modo-oscuro");
- 
-  if (document.body.classList.contains("modo-oscuro")) {
-    botonTema.textContent = "☀️ Modo claro";
-  } else {
-    botonTema.textContent = "🌙 Modo oscuro";
-  }
- 
-  console.log("Modo oscuro activo:", document.body.classList.contains("modo-oscuro"));
-});
