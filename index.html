@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mi primera pagina</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+    <h1>Mi pagina personal </h1>
+    <nav>
+        <a href="#sobre-mi"> sobre mi </a>
+        <a href="#intereses"> intereses </a>
+        <a href="#avances"> mis avances </a>
+        <a href="#contacto"> contacteme</a>
+        <a href="practica-js.html">Laboratorio JS</a>
+        <a href="lista/lista.html">Lista de Tareas</a>
+        </nav>
+
+     <button type="button" id="btn-tema" class ="btn-tema">:D Modo oscuro</button>
+        
+</header>
+
+<main>
+    <h2 id="sobre-mi">sobre mi</h2>
+
+    <p id="saludo" class="saludo"></p>
+
+    <div class="sobre-mi-grid">
+    <p>soy <strong class="destacado">Emerson</strong> y estoy aprendiendo  <em>desarrollo web</em></p>
+        <img src="image/DSC03003 9.jpg" alt="foto de perfil" width="300">
+
+        <h2 id="intereses">intereses<span id="contador-favorito" class="contador"></span></h2>
+        <ul>
+            <li>Diseño</li>
+            <li>Programación</li>
+            <li>FotografÍa</li>
+            <li>Videojuegos</li>
+        </ul>
+
+        <h2 id="avances">mis avances</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>lenguaje</th> 
+                    <th>nivel</th>
+                    <th>meses de practica</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>HTML</td>
+                    <td>básico</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>CSS</td>
+                    <td>principiante</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>JavaScript</td>
+                    <td>Sin empezar</td>
+                    <td>0</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+        <h2 id="contacto">Contácteme</h2>
+        <form novalidate>
+            <p>
+                <label for="Nombre">Nombre:</label><br>
+                <input type="text" id="Nombre" name="Nombre">
+            </p>
+            <p>
+                <label for="Correo">Correo:</label><br>
+                <input type="email" id="Correo" name="Correo"><br>
+                <small id="contador-mensaje" class="contador-mensaje">0 caracteres</small>
+            </p>
+            <p>
+                <label for="Mensaje">Mensaje:</label><br>
+                <textarea id="Mensaje" name="Mensaje"></textarea>
+            </p>
+            <p>
+                <label for="Nivel">Nivel de interés:</label><br>
+                <select id="Nivel" name="Nivel">
+                    <option value="Principiante">Principiante</option>
+                    <option value="Intermedio">Intermedio</option>
+                </select>
+            </p>
+            <p>
+                <button type="submit">Enviar</button>
+                <button type="reset">Borrar</button>
+            </p>
+        </form>
+
+<p id="Mensaje-error" class="Mensaje-form">
+
+ </main>
+
+ <footer>
+    <p>contactame en <a href="mailto:emertumax@gmail.com">emertumax@gmail.com</a></p>
+
+     <p  class="badge-js">(●'◡'●) JavaScript conectado - abre la consola</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html> 
+
