@@ -3,13 +3,18 @@
 <head>
     <meta charset="UTF-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>mi primera pagina</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="pagina personal de Emerson: Estudiante de desarrollo web. Conoce mis intereses, avances en html, css, y JavaScript, y contactenme.">
+    <title>Emerson - mi primera pagina </title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+
+    <a href="#contenido" class="saltar">Saltar al contenido principal</a>
+
     <header>
     <h1>Mi pagina personal </h1>
-    <nav>
+    
+    <nav aria-label="Menú principal">
         <a href="#sobre-mi"> sobre mi </a>
         <a href="#intereses"> intereses </a>
         <a href="#avances"> mis avances </a>
@@ -18,20 +23,23 @@
         <a href="lista/lista.html">Lista de Tareas</a>
         </nav>
 
-     <button type="button" id="btn-tema" class ="btn-tema">:D Modo oscuro</button>
+     <button type="button" id="btn-tema" class ="btn-tema" aria-pressed="false">:D Modo oscuro</button>
         
 </header>
 
-<main>
+<main id="contenido">
     <h2 id="sobre-mi">sobre mi</h2>
 
     <p id="saludo" class="saludo"></p>
 
     <div class="sobre-mi-grid">
     <p>soy <strong class="destacado">Emerson</strong> y estoy aprendiendo  <em>desarrollo web</em></p>
-        <img src="image/DSC03003 9.jpg" alt="foto de perfil" width="300">
+        <img src="img/DSC03003 9.jpg" alt="taje de convitero de diablo con una vista de picado" width="300" height="355">
 
         <h2 id="intereses">intereses<span id="contador-favorito" class="contador"></span></h2>
+
+        
+
         <ul>
             <li>Diseño</li>
             <li>Programación</li>
@@ -41,6 +49,9 @@
 
         <h2 id="avances">mis avances</h2>
         <table>
+
+            <caption class="solo-lectores">Mis avances por lenguaje</caption>
+
             <thead>
                 <tr>
                     <th>lenguaje</th> 
@@ -69,14 +80,15 @@
     </div>
 
         <h2 id="contacto">Contácteme</h2>
+
         <form novalidate>
             <p>
                 <label for="Nombre">Nombre:</label><br>
-                <input type="text" id="Nombre" name="Nombre">
+                <input type="text" id="Nombre" name="Nombre" autocomplete="name">
             </p>
             <p>
                 <label for="Correo">Correo:</label><br>
-                <input type="email" id="Correo" name="Correo"><br>
+                <input type="email" id="Correo" name="Correo" autocomplete="name"><br>
                 <small id="contador-mensaje" class="contador-mensaje">0 caracteres</small>
             </p>
             <p>
@@ -96,7 +108,7 @@
             </p>
         </form>
 
-<p id="Mensaje-error" class="Mensaje-form">
+<p id="Mensaje-error" class="Mensaje-form" aria-live="polite">
 
  </main>
 
@@ -105,15 +117,23 @@
 
      <p  class="badge-js">(●'◡'●) JavaScript conectado - abre la consola</p>
 
+     <div class="en-linea"></div>
+     <p class="en-linea-estdado"><span class="punto-vivo" aria-hidden="true"></span>Sitio publicado en internet</p>
+     <p class="en-linea-texto">Visita esta pagina desde cualquier dispositivo</p>
+     <p class="en-linea-enlaces">
+        <a href="https://emerson-pagina-personal.netlify.app" target="_blank" rel="noopener">emerson-pagina-personal.netlify.app</a>
+        <a href="https://emerson-pagina-personal.netlify.app/lista/Lista.html" target="_blank" rel="noopener">Mi lista de tareas en linea</a>
+        </p>
+
     <p>
         <a class="enlace-github" href="https://github.com/emersontumax95-commits/pagina-personal.git" target="_blank" rel="noopener">
-          <span class="icono-git">⎇</span> Ver el código de esta página en GitHub
+          <span class="icono-git" aria-hidden="true">⎇</span> Ver el código de esta página en GitHub
         </a>
       </p>
 
     </footer>
 
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 
 </body>
 </html> 
